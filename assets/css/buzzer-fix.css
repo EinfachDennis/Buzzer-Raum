@@ -1,0 +1,51 @@
+/* buzzer-raum/assets/css/buzzer-fix.css */
+
+/* Entferne alle automatischen Animationen */
+.buzzer-header,
+.buzzer-actions,
+.buzzer-section,
+.room-cards,
+.no-rooms,
+.create-form-container,
+.join-form-container,
+.team-selection,
+.buzzer-room-content {
+    animation: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Zusätzlich alle anderen potenziell animierten Elemente */
+.room-card,
+.team-select-card,
+.buzzer-container,
+.teams-scoreboard,
+.team-card,
+.team-note-editor {
+    animation: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Stelle sicher, dass keine Transition-Effekte übrig bleiben */
+* {
+    transition-delay: 0s !important;
+}
+
+/* Entferne alle GSAP-Animationen wenn vorhanden */
+.gsap-animated {
+    transform: none !important;
+    opacity: 1 !important;
+}
+
+/* Stelle sicher, dass der Hintergrund und Overlays korrekt dargestellt werden */
+.background-overlay {
+    opacity: 1 !important;
+}
+
+/* Stelle sicher, dass alle Container und Layout-Elemente sichtbar sind */
+.container, main, header, footer {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+}
